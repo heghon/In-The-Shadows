@@ -17,8 +17,6 @@ public class MovementsHandler : MonoBehaviour
 
     bool isSelected;
 
-    bool easyMode;
-
     private void Awake()
     {
         pos.x = 0;
@@ -33,8 +31,6 @@ public class MovementsHandler : MonoBehaviour
         rotationPoint.x = 0;
         rotationPoint.y = 61;
         rotationPoint.z = 0;
-
-        easyMode = GameObject.Find("Canvas").GetComponent<EasyModeManager>().easyMode;
     }
 
     public void HandleTheMoves(int diff, bool victoryBool)
